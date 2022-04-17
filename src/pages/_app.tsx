@@ -1,14 +1,16 @@
 import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from '../styles/theme'
-// import { SidebarDrawerProvider } from '../contexts/SidebarContext'
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
-      {/* <SidebarDrawerProvider> */}
-        <Component {...pageProps} />
-      {/* </SidebarDrawerProvider> */}
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
