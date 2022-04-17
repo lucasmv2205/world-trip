@@ -50,16 +50,9 @@ export default function Infos() {
         <Text fontWeight="500" fontSize={["md", "xl"]} color="gray.700">
           cidades +100
           <Popover>
-            <PopoverTrigger>
+          <PopoverTrigger>
               <span>
-                <Icon
-                  cursor="pointer"
-                  as={RiInformationLine}
-                  ml="1"
-                  color="gray.400"
-                  w={["10px", "16px"]}
-                  h={["10px", "16px"]}
-                />
+                <Icon cursor="pointer" as={RiInformationLine} ml="1" color="gray.400" w={["10px","16px"]} h={["10px","16px"]}/>
               </span>
             </PopoverTrigger>
             <PopoverContent bg="gray.700" color="yellow.400" >
